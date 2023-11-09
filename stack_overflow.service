@@ -1,0 +1,14 @@
+[Unit]
+Description=Linkedin STOCK  Photo Update service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+#Restart=always
+#RestartSec=1
+User=pi    
+ExecStart=/usr/bin/env python /home/pi/scripts/stack_overflow_daily.py
+
+[Install]
+WantedBy=multi-user.target

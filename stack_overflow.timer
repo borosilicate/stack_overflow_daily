@@ -1,0 +1,20 @@
+# This timer unit is for testing
+# By David Both
+# Licensed under GPL V2
+#
+
+[Unit]
+Description=Logs some system statistics to the systemd journal
+Requires=.service
+[Timer]
+Unit=stack_overflow.service
+#OnCalendar=*-*-* 8:15:00
+#OnCalendar=*-*-* 10:16:00
+OnCalendar=*-*-* 12:17:00
+#OnCalendar=*-*-* 14:18:00
+#OnCalendar=*-*-* 16:19:00
+#OnCalendar=*-*-* 18:21:00
+#OnCalendar=*-*-* 18:50:00
+
+[Install]
+WantedBy=timers.target
