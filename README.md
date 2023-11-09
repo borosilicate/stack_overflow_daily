@@ -13,16 +13,23 @@ Key steps...
 chrome profile.
 You can find it by going to chrome://version in your browser.
 Replace my path with the profile path.
-4. Make sure to install the correct libraries.
+```
+chrome_options.add_argument("--user-data-dir=/home/Your_User_name/.config/chromium")
+```
+5. Make sure to install the correct libraries.
+```
 sudo apt install chromedriver
 pip install selenium
 pip install PyVirtualDisplay
-5. Move the systemctl files in place 
-sudo cp stack_overflow.time /etc/systemd/system/stack_overflow.timer
-sudo cp stack_overflow.service /etc/systemd/system/stack_overflow.service
-sudo cp stack_overflow_daily.py /usr/sbin/stack_overflow_daily.py
+```
+6. Move the systemctl files in place 
+```
+sudo cp stack_overflow.time /etc/systemd/system/
+sudo cp stack_overflow.service /etc/systemd/system/
+sudo cp stack_overflow_daily.py /usr/sbin/
 sudo systemctl start /etc/systemd/system/stack_overflow.timer
 sudo systemctl start /etc/systemd/system/stack_overflow.service
+```
 
 
 
