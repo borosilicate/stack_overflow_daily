@@ -17,5 +17,13 @@ Replace my path with the profile path.
 sudo apt install chromedriver
 pip install selenium
 pip install PyVirtualDisplay
+5. Move the systemctl files in place 
+sudo cp stack_overflow.time /etc/systemd/system/stack_overflow.timer
+sudo cp stack_overflow.service /etc/systemd/system/stack_overflow.service
+sudo cp stack_overflow_daily.py /usr/sbin/stack_overflow_daily.py
+sudo systemctl start /etc/systemd/system/stack_overflow.timer
+sudo systemctl start /etc/systemd/system/stack_overflow.service
+
+
 
 

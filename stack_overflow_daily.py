@@ -9,12 +9,14 @@ display.start()
 chrome_options = Options()
 
 #CHANGE THIS LINE     chrome://version/ Profile Path /home/{user}/.config/chromium
+print('MAKE SURE TO CHANGE USER DATA LINE')
 chrome_options.add_argument("--user-data-dir=/home/pi/.config/chromium")
 chrome_options.add_argument("--remote-debugging-port=9222")
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
 chrome_options.add_argument("--disable-setuid-sandbox")
 chrome_options.add_argument("--headless")
+#You can find this with the command  ->  which chromedriver
 dr=webdriver.Chrome(service=ChromeService('/usr/bin/chromedriver'),options=chrome_options)
 
 dr.get('https://stackoverflow.com/')
