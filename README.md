@@ -1,8 +1,10 @@
 #Stack Overflow Automatic Daily Check-in!
 
 Are you struggling to remember to login to stack overflow every day?!
-Would you prefer to not answer strangers coding questions on holidays?
-Do you still want to get badges for consistently logging in?
+
+Would you prefer not answer strangers coding questions on holidays?
+
+Do you still want to get your Enthusiast badge and Fanatic badge for consistently logging in?
 
 This is the project for you!
 
