@@ -1,5 +1,5 @@
 [Unit]
-Description=Linkedin STOCK  Photo Update service
+Description=Stack Overflow Login service
 After=network.target
 StartLimitIntervalSec=0
 
@@ -8,7 +8,7 @@ Type=oneshot
 #Restart=always
 #RestartSec=1
 User=pi    
-ExecStart=/usr/bin/env python /home/pi/scripts/stack_overflow_daily.py
+ExecStart=/usr/bin/env python /usr/sbin/stack_overflow_daily.py
 
 [Install]
 WantedBy=multi-user.target
